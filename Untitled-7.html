@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .wrapper{
+            /* outline: 1px solid yellowgreen; */
+            width: 200px;
+            height: 36px;
+            margin: 50px auto;
+            position: relative;
+            background-image: url(letter.png);
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+        }
+        .block{
+            background-color: #05ace2;
+            width: 3px;
+            height: 36px;
+            transform: skew(-28deg); 
+            opacity: 0;
+            display: inline-block;
+            position: absolute;
+        }
+        .blockfour{
+             animation: my 3s linear 1s infinite;
+
+        }
+        .blockthree{
+             animation: my1 3s linear 1s infinite;
+             
+
+        }
+        .blocktwo{
+             animation: my2 3s linear 1s infinite;
+
+        }
+        .blockone{
+             animation: my3 3s linear 1s infinite;
+
+        }
+
+         @keyframes my { 
+            0%{
+              opacity: 0;  
+              margin-left:10px; 
+            }
+            10%{
+            opacity: 1;
+           }  
+           30%{
+               margin-left: 79px;
+               opacity: 1;
+
+           }
+           75%{
+               opacity: 1;
+           }
+           90%{
+            opacity: 0;
+           }
+           100%{
+               opacity: 0;
+               margin-left: 79px;
+
+           }          
+        }
+        @keyframes my1 { 
+            0%{
+              opacity: 0;  
+              margin-left:10px; 
+            }
+            10%{
+            opacity: 0;
+            margin-left:10px;
+           } 
+           20%{
+            opacity: 1;
+           }  
+           40%{
+               margin-left: 74px;
+               opacity: 1;
+
+           }
+           76%{
+               opacity: 1;
+           }
+           90%{
+            opacity: 0;
+           }
+           100%{
+               opacity: 0;
+               margin-left: 74px;
+
+           }          
+        }
+        @keyframes my2 { 
+            0%{
+              opacity: 0;  
+              margin-left:10px; 
+            }
+            20%{
+            opacity: 0;
+            margin-left:10px;
+           }
+           30%{
+            opacity: 1;
+           }   
+           50%{
+               margin-left: 69px;
+               opacity: 1;
+
+           }
+           77%{
+               opacity: 1;
+           }
+           90%{
+            opacity: 0;
+           }
+           100%{
+               opacity: 0;
+               margin-left: 69px;
+
+           }          
+        }
+        @keyframes my3 { 
+            0%{
+              opacity: 0;  
+              margin-left:10px; 
+            }
+            30%{
+            opacity: 0;
+            margin-left:10px;
+           } 
+           40%{
+            opacity: 1;
+           } 
+           60%{
+               margin-left: 64px;
+               opacity: 1;
+
+           }
+           78%{
+               opacity: 1;
+           }
+           90%{
+            opacity: 0;
+           }
+           100%{
+               opacity: 0;
+               margin-left: 64px;
+
+           }          
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="block blockone"></div>
+        <div class="block blocktwo"></div>
+        <div class="block blockthree"></div>
+        <div class="block blockfour"></div>
+    </div>
+</body>
+</html>
